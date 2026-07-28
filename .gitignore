@@ -14,3 +14,6 @@ venv/
 
 # OS
 .DS_Store
+
+# Regenerable benchmark corpus (built by `stagy bench`)
+/samples/bench/

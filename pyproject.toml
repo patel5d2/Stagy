@@ -39,6 +39,16 @@ stagy = "stagy.cli.main:app"
 [tool.hatch.build.targets.wheel]
 packages = ["src/stagy"]
 
+[tool.hatch.build.targets.sdist]
+# Keep regenerable/dependency trees out of the source dist. The sdist builder
+# doesn't honor nested .gitignore files (e.g. web/frontend/.gitignore), so
+# node_modules (~80 MB) and the benchmark corpus (~60 MB) must be listed here.
+exclude = [
+    "/samples",                    # regenerable benchmark corpus (`stagy bench`)
+    "/web/frontend/node_modules",  # JS deps — reinstall with `npm ci`
+    "/web/frontend/dist",          # built frontend bundle
+]
+
 [tool.ruff]
 src = ["src"]
 line-length = 100
