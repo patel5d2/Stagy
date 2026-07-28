@@ -65,6 +65,26 @@ def test_detect_reference_rejected_for_directory(tmp_path) -> None:
     assert r.exit_code == 1  # --reference is a single-file comparison
 
 
+def test_analyze_many_parallel_matches_serial(tmp_path) -> None:
+    _tree(tmp_path)
+    paths = [str(p) for p in sorted(tmp_path.iterdir())]
+    serial = report.analyze_many(paths, jobs=1)
+    parallel = report.analyze_many(paths, jobs=2)
+
+    def key(rs: list[report.Report]) -> list[tuple[str, str]]:
+        return [(os.path.basename(r.path), r.verdict) for r in rs]
+
+    # Same shipped calibration in both paths -> identical verdicts and ranking.
+    assert key(serial) == key(parallel)
+
+
+def test_detect_cli_parallel_scan(tmp_path) -> None:
+    _tree(tmp_path)
+    r = runner.invoke(app, ["detect", "-i", str(tmp_path), "-j", "2"])
+    assert r.exit_code == 0, r.output
+    assert "scanned" in r.output
+
+
 def test_fail_on_flag_exit_code(tmp_path) -> None:
     _tree(tmp_path)  # contains a loud stego -> something is flagged
     hit = runner.invoke(app, ["detect", "-i", str(tmp_path), "--fail-on-flag"])

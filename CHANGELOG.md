@@ -29,6 +29,10 @@ Notable changes, newest first. Format follows
   documents `pipx` as the isolated way to install the CLI.
 - **Shell completion** for the `stagy` command: `--install-completion` and
   `--show-completion` (bash, zsh, fish, powershell), via typer's bundled backend.
+- **Progress bar and parallel directory scan.** `stagy detect -i <dir>` shows a
+  progress bar (on stderr, so JSON output stays clean) and takes `--jobs`/`-j`
+  (`0` = all cores) to scan across a process pool — steganalysis is CPU-bound
+  (~1 file/s per core on a 4 MP photo), so large trees now scale with cores.
 
 ## [1.0.0] - 2026-07-28
 

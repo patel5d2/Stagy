@@ -22,9 +22,11 @@ Maps to MITRE ATT&CK T1027.003 (Obfuscated Files or Information: Steganography).
 
 from __future__ import annotations
 
+import functools
 import json
 import math
-from collections.abc import Iterable
+from collections.abc import Callable, Iterable
+from concurrent.futures import ProcessPoolExecutor
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
@@ -313,27 +315,59 @@ def _error_report(path: str, exc: Exception, prior: float | None) -> Report:
                   [Signal("scan-error", 0.0, f"could not scan: {exc}")])
 
 
+def _scan_one(path: str, prior: float | None) -> Report:
+    """Worker for a parallel scan: scores one file, its own failure contained.
+
+    Loads the shipped calibration itself (each pool worker is a fresh process).
+    That per-file reload is <1 ms against a 250 ms/MP scan, so it is not worth the
+    machinery of a pool initializer to avoid.
+    """
+    try:
+        return analyze(path, prior=prior)
+    except Exception as exc:  # noqa: BLE001 — one unreadable file must not abort a bulk scan
+        return _error_report(path, exc, prior)
+
+
 def analyze_many(
     paths: Iterable[str],
     *,
     calibration: CalibrationSet | None = None,
     prior: float | None = None,
+    on_scanned: Callable[[], None] | None = None,
+    jobs: int = 1,
 ) -> list[Report]:
     """Score many files for a bulk/triage scan, ranked by descending probability.
 
     This is why a directory scan belongs in the library and not a shell loop over
-    ``stagy detect``: the calibration is loaded and parsed **once** and reused for
-    every file, and the results come back in triage order (most-suspicious first)
-    — the low-false-positive ranking the whole detection design optimizes for. A
-    file that cannot be scanned becomes an ``error`` verdict instead of aborting
-    the sweep, so one truncated image never kills a million-file run.
+    ``stagy detect``: the results come back in triage order (most-suspicious
+    first) — the low-false-positive ranking the whole detection design optimizes
+    for — and a file that cannot be scanned becomes an ``error`` verdict instead
+    of aborting the sweep, so one truncated image never kills a million-file run.
+
+    ``on_scanned`` is invoked once per file, after it is scored — the hook the CLI
+    drives a progress bar from, keeping this function free of any UI dependency.
+
+    ``jobs`` sets worker processes: 1 scans serially (calibration loaded once); >1
+    (or 0 for every core) spreads the CPU-bound scan across a pool. Measured
+    serial throughput is ~1 file/s on a 4 MP photo, so a large real-photo tree is
+    where a pool earns its overhead. In pool mode ``calibration`` is ignored —
+    each worker loads the shipped one; pass a custom calibration only with jobs=1.
     """
-    cal = calibration if calibration is not None else _load_calibration()
     reports: list[Report] = []
-    for p in paths:
-        try:
-            reports.append(analyze(p, calibration=cal, prior=prior))
-        except Exception as exc:  # noqa: BLE001 — one unreadable file must not abort a bulk scan
-            reports.append(_error_report(p, exc, prior))
+    if jobs == 1:
+        cal = calibration if calibration is not None else _load_calibration()
+        for p in paths:
+            try:
+                reports.append(analyze(p, calibration=cal, prior=prior))
+            except Exception as exc:  # noqa: BLE001 — one bad file must not abort the sweep
+                reports.append(_error_report(p, exc, prior))
+            if on_scanned is not None:
+                on_scanned()
+    else:
+        with ProcessPoolExecutor(max_workers=jobs or None) as ex:
+            for rep in ex.map(functools.partial(_scan_one, prior=prior), paths):
+                reports.append(rep)
+                if on_scanned is not None:
+                    on_scanned()
     reports.sort(key=lambda r: r.probability, reverse=True)
     return reports

@@ -120,7 +120,9 @@ Pointing `detect` at a directory scans it recursively and prints the files
 **ranked by P(hidden data)** — the low-false-positive triage order the whole
 detector design optimizes for — with `--all` to list every file and
 `--report json` for a machine-readable array. The calibration is loaded once for
-the sweep, and one unreadable file is reported, not fatal.
+the sweep, and one unreadable file is reported, not fatal. Steganalysis is
+CPU-bound (~1 file/s per core on a 4 MP photo), so `-j`/`--jobs` (0 = all cores)
+spreads a large tree across a process pool; a progress bar shows on stderr.
 
 `detect` reports a **posterior probability**, not just a label, and the verdict
 thresholds come from measured operating points — the score at which the

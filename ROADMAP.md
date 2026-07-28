@@ -46,16 +46,17 @@ Format: **[status]** feature — the gap it closes · rough size.
   typer's bundled `shellingham`, no new dependency. Also **release provenance**:
   a CycloneDX SBOM of the runtime tree and a `SHA256SUMS` on every release.
 
+- **[done]** **Progress bar + parallel scan for large trees.** The directory
+  scan shows a `rich.Progress` bar (on stderr, so `--report json` and redirects
+  stay clean). Measurement then justified the pool: serial scanning is CPU-bound
+  numpy at **~250 ms/MP** (~1 file/s on a 4 MP photo), so a real-photo tree of
+  any size is slow serially. `--jobs N` (`-j`, `0` = all cores) spreads it across
+  a process pool via `analyze_many(..., jobs=)`; measured ~2.4x on 12 cores at 25
+  files and climbing with tree size. Default stays serial (`jobs=1`), opt-in.
+
 ## Next — ready to pick up
 
-1. **Progress + parallelism for large trees** · small, then measure. The bulk
-   scan shows a spinner; swap it for a `rich.Progress` bar over the file count.
-   Only *then* consider a `--jobs` process pool: steganalysis is CPU-bound numpy,
-   so parallelism helps — but measure the serial wall-time on a real tree first,
-   because a pool adds pickling and shutdown complexity that a fast-enough serial
-   scan does not need.
-
-2. **Read each file once per scan** · small. `filecarve`, `entropy`, and
+1. **Read each file once per scan** · small. `filecarve`, `entropy`, and
    `png-text` each call `Path.read_bytes` on the same file. Fine for one file;
    on a million-file tree it is three reads where one would do. Thread the bytes
    through `_appended_signals` once the bulk scan proves it matters.

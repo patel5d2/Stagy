@@ -11,6 +11,7 @@ from typing import NoReturn
 
 import typer
 from rich.console import Console
+from rich.progress import BarColumn, MofNCompleteColumn, Progress, TextColumn, TimeElapsedColumn
 from rich.table import Table
 
 from .. import __version__, _seal, hide, reveal
@@ -501,7 +502,7 @@ _FLAGGED = ("suspicious", "likely-stego")
 
 def _detect_tree(
     root: Path, *, reference: Path | None, report: str, out: Path | None,
-    prior: float | None, show_all: bool, fail_on_flag: bool,
+    prior: float | None, show_all: bool, fail_on_flag: bool, jobs: int,
 ) -> None:
     if reference is not None:
         _fail("--reference compares two single files; it does not apply to a directory scan")
@@ -509,8 +510,17 @@ def _detect_tree(
     if not files:
         _fail(f"no files to scan under {root}")
 
-    with console.status(f"scanning {len(files)} files…"):
-        reports = report_mod.analyze_many((str(f) for f in files), prior=prior)
+    # Progress bar on stderr, so stdout stays clean for --report json and redirects.
+    with Progress(
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(), MofNCompleteColumn(), TimeElapsedColumn(),
+        console=err, transient=True,
+    ) as progress:
+        task = progress.add_task("scanning", total=len(files))
+        reports = report_mod.analyze_many(
+            (str(f) for f in files), prior=prior, jobs=jobs,
+            on_scanned=lambda: progress.advance(task),
+        )
 
     def row(r: report_mod.Report) -> dict[str, object]:
         return {"path": str(Path(r.path).relative_to(root)), "verdict": r.verdict,
@@ -563,11 +573,15 @@ def detect(
     fail_on_flag: bool = typer.Option(
         False, "--fail-on-flag", help="Exit non-zero (2) if any file is flagged — for cron/CI."
     ),
+    jobs: int = typer.Option(
+        1, "--jobs", "-j", min=0,
+        help="Directory scan: worker processes (0 = all cores). ~1 file/s per core on 4 MP photos.",
+    ),
 ) -> None:
     """Scan a file — or a whole directory — for hidden data and rank the verdicts."""
     if suspect.is_dir():
         _detect_tree(suspect, reference=reference, report=report, out=out,
-                     prior=prior, show_all=show_all, fail_on_flag=fail_on_flag)
+                     prior=prior, show_all=show_all, fail_on_flag=fail_on_flag, jobs=jobs)
         return
     rep = report_mod.analyze(
         str(suspect),
