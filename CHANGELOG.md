@@ -23,6 +23,10 @@ Notable changes, newest first. Format follows
   scanned/flagged/clean/error counts) — the CLI's directory scan over HTTP. File
   count is capped (`MAX_BATCH_FILES`); an unsupported or unreadable file becomes
   an `error` row instead of failing the whole request.
+- **Release provenance.** Each release now attaches a CycloneDX SBOM of the
+  shipped runtime dependencies and a `SHA256SUMS` file, so a download can be
+  verified (`sha256sum -c SHA256SUMS`) and its dependency tree audited. Also
+  documents `pipx` as the isolated way to install the CLI.
 
 ## [1.0.0] - 2026-07-28
 

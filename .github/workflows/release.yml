@@ -27,8 +27,19 @@ jobs:
             exit 1
           fi
 
-      - run: pip install build
+      - run: pip install build cyclonedx-bom
       - run: python -m build
+
+      - name: Provenance — SBOM + checksums
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          # SBOM of the *shipped* runtime tree only: a throwaway venv with just the
+          # package and its install_requires, so dev/test deps never leak in.
+          python -m venv /tmp/sbomenv
+          /tmp/sbomenv/bin/pip install --quiet .
+          cyclonedx-py environment /tmp/sbomenv -o "dist/stagy-${tag}.cdx.json"
+          # SHA-256 over every artifact (wheel, sdist, SBOM) — not the sums file.
+          (cd dist && sha256sum stagy-* > SHA256SUMS)
 
       - name: Create GitHub Release
         env:

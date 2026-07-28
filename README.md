@@ -39,9 +39,24 @@ spread-spectrum, and network channels with their honest tradeoffs.
 
 ## Install
 
+Run the CLI isolated from your system Python (recommended):
+
+```bash
+pipx install git+https://github.com/patel5d2/Stagy   # the `stagy` command, sandboxed
+```
+
+Or set up a dev environment (tests, linters, every optional codec):
+
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
+```
+
+Each release attaches a CycloneDX **SBOM** (`stagy-<version>.cdx.json`) and a
+`SHA256SUMS` file. Verify a download before trusting it:
+
+```bash
+sha256sum -c SHA256SUMS      # confirms the wheel/sdist match the release
 ```
 
 ## Design in one breath
