@@ -31,6 +31,7 @@ from starlette.concurrency import run_in_threadpool
 
 import stagy
 from stagy.analysis import bitplane, report
+from stagy.analysis.evaluate import DEFAULT_PRIOR
 from stagy.codecs import CODECS
 from stagy.container import DecodedPayload
 from stagy.errors import (
@@ -43,8 +44,10 @@ from stagy.errors import (
 )
 
 from .limits import (
+    MAX_BATCH_FILES,
     MAX_DECOMPRESSED_BYTES,
     MAX_UPLOAD_BYTES,
+    is_supported_cover,
     rate_limit,
     read_upload,
     require_supported_cover,
@@ -321,3 +324,65 @@ async def detect(
         ],
         bitplane_png_b64=plane_b64,
     )
+
+
+class BatchItemOut(BaseModel):
+    filename: str
+    verdict: str  # clean | suspicious | likely-stego | error
+    probability: float
+    prior: float
+    calibrated: bool
+
+
+class BatchDetectOut(BaseModel):
+    scanned: int
+    flagged: int  # suspicious + likely-stego
+    clean: int
+    errors: int  # unsupported type, or unreadable bytes
+    items: list[BatchItemOut]  # ranked most-suspicious first, error rows last
+
+
+@app.post("/api/detect-batch", response_model=BatchDetectOut, tags=["detect"],
+          dependencies=[_RateLimited])
+async def detect_batch(files: list[UploadFile]) -> BatchDetectOut:
+    """Scan many covers at once, ranked most-suspicious first.
+
+    `stagy detect -i <dir>` over HTTP: the frontend gets the same triage list. An
+    unsupported or unreadable file comes back as an `error` row instead of sinking
+    the whole batch, and the calibration is loaded once for the run
+    (`report.analyze_many`), not re-parsed per file.
+    """
+    if not files:
+        raise HTTPException(400, "no files uploaded")
+    if len(files) > MAX_BATCH_FILES:
+        raise HTTPException(413, f"too many files: {len(files)} > {MAX_BATCH_FILES} per request")
+
+    reads: list[tuple[str, bytes]] = []
+    for i, f in enumerate(files):
+        name = f.filename or f"file{i}"
+        reads.append((name, await read_upload(f, field=name)))
+    unsupported = [n for n, d in reads if not is_supported_cover(d)]
+    supported = [(n, d) for n, d in reads if is_supported_cover(d)]
+
+    def _sync() -> list[tuple[str, report.Report]]:
+        with _scratch() as d:
+            names: dict[str, str] = {}
+            for i, (name, data) in enumerate(supported):
+                names[_write(d, f"f{i}.png", data)] = name
+            return [(names[r.path], r) for r in report.analyze_many(list(names))]
+
+    scored = await run_in_threadpool(_sync)
+    items = [
+        BatchItemOut(filename=name, verdict=r.verdict, probability=r.probability,
+                     prior=r.prior, calibrated=r.calibrated)
+        for name, r in scored
+    ]
+    items += [
+        BatchItemOut(filename=n, verdict="error", probability=0.0,
+                     prior=DEFAULT_PRIOR, calibrated=False)
+        for n in unsupported
+    ]
+    flagged = sum(1 for it in items if it.verdict in ("suspicious", "likely-stego"))
+    errors = sum(1 for it in items if it.verdict == "error")
+    return BatchDetectOut(scanned=len(items), flagged=flagged,
+                          clean=len(items) - flagged - errors, errors=errors, items=items)

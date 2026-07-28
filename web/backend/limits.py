@@ -24,6 +24,13 @@ decompression bomb pays off. Measured amplification on the unpatched
 container was 1,028x, so 16 MB of upload could have claimed ~16 GB of RAM.
 """
 
+MAX_BATCH_FILES = 50
+"""Cap on files per /api/detect-batch request.
+
+Each file is already size-capped, but the count needs its own bound: one request
+must not be able to queue unbounded work. 50 x 16 MB is the worst-case footprint.
+"""
+
 # Magic-number whitelist. Extensions are attacker-supplied and mean nothing;
 # these are the formats the LSB codec can actually open losslessly.
 _SIGNATURES: tuple[tuple[bytes, str], ...] = (
@@ -79,11 +86,21 @@ async def read_upload(upload: UploadFile, *, field: str) -> bytes:
     return bytes(buf)
 
 
+def is_supported_cover(data: bytes) -> bool:
+    """True if the bytes start with a whitelisted (PNG/BMP) magic number."""
+    return any(data.startswith(sig) for sig, _ in _SIGNATURES)
+
+
+def cover_mime(data: bytes) -> str | None:
+    """The whitelisted MIME for these bytes, or None if not supported."""
+    return next((mime for sig, mime in _SIGNATURES if data.startswith(sig)), None)
+
+
 def require_supported_cover(data: bytes, *, field: str = "cover") -> str:
     """Whitelist by magic number, not by filename. Returns the MIME type."""
-    for sig, mime in _SIGNATURES:
-        if data.startswith(sig):
-            return mime
+    mime = cover_mime(data)
+    if mime is not None:
+        return mime
     raise HTTPException(
         415,
         f"{field} must be PNG or BMP (lossless). JPEG/WebP re-encoding "

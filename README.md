@@ -166,7 +166,9 @@ npm --prefix web/frontend run dev           # UI on :5173
 Three flows: **Hide** (cover + payload + passphrase, live capacity meter),
 **Reveal** (stego + passphrase → payload), and **Detect** (verdict, per-detector
 evidence, rendered LSB bit-plane, and the value-pair histogram that makes the
-embedding signature visible).
+embedding signature visible). `POST /api/detect-batch` scans many covers in one
+request and returns them ranked most-suspicious first — the CLI's directory scan
+over HTTP.
 
 Uploads are **processed in memory and never persisted** — each request gets a
 temp dir that is removed on the way out, including on error. Cover types are

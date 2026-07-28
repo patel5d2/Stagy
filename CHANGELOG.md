@@ -18,6 +18,11 @@ Notable changes, newest first. Format follows
   analyzers all miss. It flags a chunk that decodes to a real file/container
   (raw or base64) as a payload, and a large opaque high-entropy chunk as
   suspicious, while leaving legitimate metadata and XMP alone.
+- **Web batch-detect endpoint.** `POST /api/detect-batch` scans many uploaded
+  covers at once and returns them ranked most-suspicious first (with
+  scanned/flagged/clean/error counts) — the CLI's directory scan over HTTP. File
+  count is capped (`MAX_BATCH_FILES`); an unsupported or unreadable file becomes
+  an `error` row instead of failing the whole request.
 
 ## [1.0.0] - 2026-07-28
 

@@ -134,6 +134,57 @@ def test_detect_flags_a_stego_file(client: TestClient, cover_png: bytes) -> None
     assert r.json()["verdict"] != "clean"
 
 
+def _stego_bytes(cover_png: bytes, tmp_path) -> bytes:
+    import stagy
+
+    cover = tmp_path / "c.png"
+    cover.write_bytes(cover_png)
+    out = tmp_path / "s.png"
+    stagy.hide(str(cover), b"S" * 20000, str(out), encrypt=False, mode="sequential")
+    return out.read_bytes()
+
+
+def test_detect_batch_ranks_and_flags(client: TestClient, cover_png: bytes, tmp_path) -> None:
+    stego = _stego_bytes(cover_png, tmp_path)
+    r = client.post("/api/detect-batch", files=[
+        ("files", ("clean.png", cover_png, "image/png")),
+        ("files", ("stego.png", stego, "image/png")),
+    ])
+    assert r.status_code == 200, r.text
+    body = r.json()
+    assert body["scanned"] == 2 and body["flagged"] >= 1
+    # Ranked most-suspicious first: the stego must lead.
+    assert body["items"][0]["filename"] == "stego.png"
+    assert body["items"][0]["verdict"] != "clean"
+
+
+def test_detect_batch_unsupported_is_error_row_not_415(
+    client: TestClient, cover_png: bytes
+) -> None:
+    jpeg = b"\xff\xd8\xff\xe0\x00\x10JFIF" + b"\0" * 128
+    r = client.post("/api/detect-batch", files=[
+        ("files", ("ok.png", cover_png, "image/png")),
+        ("files", ("bad.jpg", jpeg, "image/jpeg")),
+    ])
+    assert r.status_code == 200, r.text
+    body = r.json()
+    assert body["errors"] == 1
+    bad = next(it for it in body["items"] if it["filename"] == "bad.jpg")
+    assert bad["verdict"] == "error"
+
+
+def test_detect_batch_too_many_files_413(client: TestClient, cover_png: bytes) -> None:
+    files = [("files", (f"{i}.png", cover_png, "image/png"))
+             for i in range(limits.MAX_BATCH_FILES + 1)]
+    r = client.post("/api/detect-batch", files=files)
+    assert r.status_code == 413
+
+
+def test_detect_batch_requires_files(client: TestClient) -> None:
+    r = client.post("/api/detect-batch")
+    assert r.status_code in (400, 422)
+
+
 class TestSecurityControls:
     def test_oversized_upload_rejected_cleanly(self, client: TestClient) -> None:
         big = b"\x89PNG\r\n\x1a\n" + b"\0" * (limits.MAX_UPLOAD_BYTES + 1024)
