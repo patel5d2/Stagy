@@ -1,7 +1,9 @@
-"""Stagy: hide, reveal, and (later) detect hidden data across covers.
+"""Stagy: hide, reveal, and detect hidden data across covers.
 
 hide/reveal are the one entry point the CLI and web both call. They wire the
-container (crypto) to a dumb bit-carrier codec.
+container (crypto) to a dumb bit-carrier codec. Detection lives in
+``stagy.analysis`` — ``report.analyze`` for one file, ``report.analyze_many``
+for a ranked bulk scan.
 """
 
 from __future__ import annotations

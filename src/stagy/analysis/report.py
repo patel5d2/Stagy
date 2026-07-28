@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import json
 import math
+from collections.abc import Iterable
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
@@ -300,3 +301,36 @@ def analyze(
     if path.lower().endswith(_IMAGE_EXT):
         return analyze_image(path, reference=reference, calibration=calibration, prior=prior)
     return _analyze_appended(path, calibration=calibration, prior=prior)
+
+
+def _error_report(path: str, exc: Exception, prior: float | None) -> Report:
+    """A file that could not be read/parsed — surfaced, not silently dropped."""
+    p = prior if prior is not None else DEFAULT_PRIOR
+    return Report(path, "error", 0.0, p, False,
+                  [Signal("scan-error", 0.0, f"could not scan: {exc}")])
+
+
+def analyze_many(
+    paths: Iterable[str],
+    *,
+    calibration: CalibrationSet | None = None,
+    prior: float | None = None,
+) -> list[Report]:
+    """Score many files for a bulk/triage scan, ranked by descending probability.
+
+    This is why a directory scan belongs in the library and not a shell loop over
+    ``stagy detect``: the calibration is loaded and parsed **once** and reused for
+    every file, and the results come back in triage order (most-suspicious first)
+    — the low-false-positive ranking the whole detection design optimizes for. A
+    file that cannot be scanned becomes an ``error`` verdict instead of aborting
+    the sweep, so one truncated image never kills a million-file run.
+    """
+    cal = calibration if calibration is not None else _load_calibration()
+    reports: list[Report] = []
+    for p in paths:
+        try:
+            reports.append(analyze(p, calibration=cal, prior=prior))
+        except Exception as exc:  # noqa: BLE001 — one unreadable file must not abort a bulk scan
+            reports.append(_error_report(p, exc, prior))
+    reports.sort(key=lambda r: r.probability, reverse=True)
+    return reports

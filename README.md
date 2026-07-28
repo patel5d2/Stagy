@@ -1,8 +1,8 @@
 # Stagy
 
 A steganography suite that hides, extracts, and **detects** hidden data across
-covers. One core library; a CLI (and later a web app) wrap it. Red-team side
-embeds; blue-team side finds.
+covers. One core library; a CLI and a web app wrap it. Red-team side embeds;
+blue-team side finds. What's next: [ROADMAP.md](ROADMAP.md).
 
 > **Authorized use only.** Stagy is dual-use — built and framed as a
 > security-research and detection tool. Use it on your own files and networks.
@@ -96,8 +96,16 @@ never printed by default.
 ```bash
 stagy detect -i suspect.png                      # calibrated verdict + posterior
 stagy detect -i suspect.png --reference orig.png # near-conclusive with the original
+stagy detect -i ./share                          # bulk-scan a tree, ranked most-suspicious first
+stagy detect -i ./share --fail-on-flag           # exit 2 if anything is flagged (cron/CI)
 stagy bench --covers ./photos --fit              # measure every detector, recalibrate
 ```
+
+Pointing `detect` at a directory scans it recursively and prints the files
+**ranked by P(hidden data)** — the low-false-positive triage order the whole
+detector design optimizes for — with `--all` to list every file and
+`--report json` for a machine-readable array. The calibration is loaded once for
+the sweep, and one unreadable file is reported, not fatal.
 
 `detect` reports a **posterior probability**, not just a label, and the verdict
 thresholds come from measured operating points — the score at which the
