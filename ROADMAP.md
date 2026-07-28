@@ -41,6 +41,11 @@ Format: **[status]** feature — the gap it closes · rough size.
   (`MAX_BATCH_FILES`), and turns an unsupported/unreadable file into an `error`
   row instead of a 415 that would sink the batch.
 
+- **[done]** **Shell completion** — `add_completion=True` exposes
+  `--install-completion` / `--show-completion` (bash, zsh, fish, powershell) via
+  typer's bundled `shellingham`, no new dependency. Also **release provenance**:
+  a CycloneDX SBOM of the runtime tree and a `SHA256SUMS` on every release.
+
 ## Next — ready to pick up
 
 1. **Progress + parallelism for large trees** · small, then measure. The bulk
@@ -57,12 +62,9 @@ Format: **[status]** feature — the gap it closes · rough size.
 
 ## Later — additive, not gap-closing
 
-4. **More lossless carriers** · per-format. Uncompressed TIFF and lossless WebP
+1. **More lossless carriers** · per-format. Uncompressed TIFF and lossless WebP
    are viable LSB hosts the image codec does not yet accept. Additive codec work
    behind the same container; each needs its own re-encode-refusal guard.
-
-5. **Shell completion** · one line. `typer` ships it; the app currently sets
-   `add_completion=False`. Turn it on once the command surface is stable.
 
 ## Project health (not features, but overdue)
 

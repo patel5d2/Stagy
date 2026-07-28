@@ -27,6 +27,8 @@ Notable changes, newest first. Format follows
   shipped runtime dependencies and a `SHA256SUMS` file, so a download can be
   verified (`sha256sum -c SHA256SUMS`) and its dependency tree audited. Also
   documents `pipx` as the isolated way to install the CLI.
+- **Shell completion** for the `stagy` command: `--install-completion` and
+  `--show-completion` (bash, zsh, fish, powershell), via typer's bundled backend.
 
 ## [1.0.0] - 2026-07-28
 

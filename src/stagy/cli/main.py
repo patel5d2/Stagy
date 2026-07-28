@@ -7,6 +7,7 @@ import os
 import sys
 from enum import Enum
 from pathlib import Path
+from typing import NoReturn
 
 import typer
 from rich.console import Console
@@ -45,7 +46,9 @@ def _fmt_prob(p: float) -> str:
     pct = p * 100.0
     return f"{pct:.1f}%" if pct >= 1.0 else f"{pct:.2g}%"
 
-app = typer.Typer(add_completion=False, help="Stagy — hide, extract, and detect hidden data.")
+# add_completion=True exposes --install-completion / --show-completion (bash, zsh,
+# fish, powershell) via typer's shellingham backend — no new dependency.
+app = typer.Typer(add_completion=True, help="Stagy — hide, extract, and detect hidden data.")
 image_app = typer.Typer(help="Image LSB (PNG/BMP) embed/extract/capacity.")
 app.add_typer(image_app, name="image")
 audio_app = typer.Typer(help="Audio (16-bit PCM WAV) LSB + spread-spectrum.")
@@ -72,7 +75,7 @@ def _resolve_key(key: str | None, *, needed: bool) -> str | None:
     return None
 
 
-def _fail(msg: str) -> None:
+def _fail(msg: str) -> NoReturn:
     err.print(f"[red]error:[/red] {msg}")
     raise typer.Exit(code=1)
 

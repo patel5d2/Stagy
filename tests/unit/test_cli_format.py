@@ -26,3 +26,13 @@ def test_report_exposes_flag_threshold(tmp_path) -> None:
     corpus.synth_cover(str(p), seed=1)
     rep = report.analyze(str(p))
     assert rep.flag_threshold > 0.0
+
+
+def test_shell_completion_is_enabled() -> None:
+    # add_completion=True must stay on: the completion install/show options exist.
+    from typer.testing import CliRunner
+
+    from stagy.cli.main import app
+
+    out = CliRunner().invoke(app, ["--help"]).output
+    assert "--install-completion" in out and "--show-completion" in out
