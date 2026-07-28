@@ -76,7 +76,7 @@ def _flip(groups: np.ndarray, mask: np.ndarray) -> np.ndarray:
 
 def _discrimination(groups: np.ndarray) -> np.ndarray:
     """Sum of absolute adjacent differences per group. Low = smooth = natural."""
-    return np.abs(np.diff(groups.astype(np.int32), axis=1)).sum(axis=1)
+    return np.asarray(np.abs(np.diff(groups.astype(np.int32), axis=1)).sum(axis=1))
 
 
 def _rs_fractions(groups: np.ndarray, mask: np.ndarray) -> tuple[float, float]:
