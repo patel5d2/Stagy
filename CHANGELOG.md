@@ -13,6 +13,11 @@ Notable changes, newest first. Format follows
   array), and `--fail-on-flag` (exit code 2 on any hit, for cron/CI). Backed by
   `analysis.report.analyze_many`, which loads the calibration once for the whole
   sweep and turns an unreadable file into an `error` row instead of aborting.
+- **PNG text-chunk detection.** A new deterministic analyzer inspects PNG
+  `tEXt`/`zTXt`/`iTXt` chunks — a hiding spot the LSB, file-carve, and entropy
+  analyzers all miss. It flags a chunk that decodes to a real file/container
+  (raw or base64) as a payload, and a large opaque high-entropy chunk as
+  suspicious, while leaving legitimate metadata and XMP alone.
 
 ## [1.0.0] - 2026-07-28
 

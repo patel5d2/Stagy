@@ -22,27 +22,35 @@ Format: **[status]** feature — the gap it closes · rough size.
   `error` row instead of aborting the run. A shell loop over `stagy detect` can
   do neither.
 
+- **[done]** **PNG text-chunk analyzer** (`analysis/png_text.py`). The LSB
+  analyzers read the pixel plane and `filecarve`/`entropy` read the appended
+  region, so a payload parked in a `tEXt`/`zTXt`/`iTXt` chunk — a classic hiding
+  spot viewers never show — slipped past everything. The new deterministic
+  analyzer (own `log_lr`, no calibration, absence stays neutral) decodes each
+  text chunk, calls it a **payload** when it decodes to a real file/container
+  (raw or base64 — near-conclusive, `log_lr` 6.0) and **suspicious** when it is a
+  large opaque high-entropy blob (`log_lr` 3.0), while whitelisting legitimate
+  large XML/XMP. Wired into `_appended_signals`, so it sets a floor on the
+  verdict independent of the pixel plane.
+
 ## Next — ready to pick up
 
-1. **PNG text-chunk analyzer** · small–medium. The detection suite reads the LSB
-   plane and the appended region, and `meta scan` surfaces EXIF/XMP — but PNG
-   `tEXt`/`iTXt`/`zTXt` chunks, a classic hiding spot, are inspected by nothing.
-   Add a deterministic analyzer in the `filecarve`/`entropy` family (its own
-   `log_lr`, no calibration) that flags oversized, base64-shaped, or
-   high-entropy text chunks. Fits `_appended_signals` exactly; the main work is
-   false-positive tuning against software-tag chunks (`Software`, `Comment`).
-
-2. **Web batch-detect endpoint** · small. `analyze_many` is already the shape the
+1. **Web batch-detect endpoint** · small. `analyze_many` is already the shape the
    API needs; wrap it as `POST /api/detect-batch` (a small archive of covers, or
    repeated `files=`), reusing the existing upload caps, magic-number whitelist,
    and threadpool dispatch. Gives the frontend the same triage table the CLI has.
 
-3. **Progress + parallelism for large trees** · small, then measure. The bulk
+2. **Progress + parallelism for large trees** · small, then measure. The bulk
    scan shows a spinner; swap it for a `rich.Progress` bar over the file count.
    Only *then* consider a `--jobs` process pool: steganalysis is CPU-bound numpy,
    so parallelism helps — but measure the serial wall-time on a real tree first,
    because a pool adds pickling and shutdown complexity that a fast-enough serial
    scan does not need.
+
+3. **Read each file once per scan** · small. `filecarve`, `entropy`, and
+   `png-text` each call `Path.read_bytes` on the same file. Fine for one file;
+   on a million-file tree it is three reads where one would do. Thread the bytes
+   through `_appended_signals` once the bulk scan proves it matters.
 
 ## Later — additive, not gap-closing
 

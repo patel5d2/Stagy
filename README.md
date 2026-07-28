@@ -138,13 +138,21 @@ their independent agreement is what makes the verdict trustworthy rather than a
 single noisy guess. See
 [docs/detection-benchmark.md](docs/detection-benchmark.md).
 
-A separate pair of analyzers catches *appended-data* steganography — a file
-hidden after a cover's EOF marker. **File-carving** scans the appended region for
-known signatures (ZIP, secondary PNG/JPEG, PDF, …); **entropy analysis** flags a
-high-entropy appended blob even when it has no signature (an encrypted payload).
-Both give deterministic evidence — a hidden ZIP after a PNG's `IEND` is a fact,
-not a probability — so they are weighted directly rather than calibrated, and
-absence is treated as neutral, never as a clean verdict.
+A separate set of analyzers catches hiding techniques *orthogonal* to the LSB
+plane, each giving deterministic evidence — a hidden ZIP after a PNG's `IEND` is
+a fact, not a probability — so they are weighted directly rather than calibrated,
+and absence is treated as neutral, never as a clean verdict:
+
+- **File-carving** scans the region past a cover's EOF marker for known
+  signatures (ZIP, secondary PNG/JPEG, PDF, …).
+- **Entropy analysis** flags a high-entropy appended blob even when it has no
+  signature (an encrypted payload).
+- **PNG text chunks** (`tEXt`/`zTXt`/`iTXt`) are a hiding spot viewers never
+  show; the analyzer flags a chunk that decodes to a real file/container, or a
+  large opaque high-entropy blob, while leaving ordinary metadata and XMP alone.
+
+Because these are orthogonal to LSB embedding, a firing signal sets a *floor* on
+the verdict rather than being averaged away by a clean pixel plane.
 
 ## Web app
 

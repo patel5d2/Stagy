@@ -31,7 +31,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from . import chi_square, entropy, filecarve, rs_analysis, sample_pairs
+from . import chi_square, entropy, filecarve, png_text, rs_analysis, sample_pairs
 from .evaluate import DEFAULT_PRIOR, CalibrationSet, fuse
 
 _IMAGE_EXT = (".png", ".bmp", ".gif", ".jpg", ".jpeg", ".tiff", ".webp")
@@ -172,14 +172,17 @@ def _lsb_signals(path: str) -> list[Signal]:
 
 
 def _appended_signals(path: str) -> list[Signal]:
-    """Appended-data analyzers — apply to any file. Deterministic evidence, so
-    each carries its own ``log_lr`` and bypasses the LSB-fitted calibration.
+    """Deterministic, self-weighting analyzers — appended data (any file) plus
+    PNG text chunks. Each carries its own ``log_lr`` and bypasses the LSB-fitted
+    calibration; absence is neutral (0.0), never a clean vote.
     """
     fc = filecarve.analyze(path)
     en = entropy.analyze(path)
+    pt = png_text.analyze(path)
     return [
         Signal("file-carve", fc.score, fc.detail, log_lr=fc.log_lr),
         Signal("entropy", en.score, en.detail, log_lr=en.log_lr),
+        Signal("png-text", pt.score, pt.detail, log_lr=pt.log_lr),
     ]
 
 
