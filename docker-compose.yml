@@ -1,0 +1,37 @@
+# Stagy self-host (roadmap 9.1). Two services; the UI is the only one exposed
+# to the host. Drops into a Proxmox homelab behind Traefik + a Cloudflare
+# Tunnel — point the tunnel at the `web` service and you have a demo URL.
+#
+#   docker compose up --build      # http://localhost:8080
+#
+# The API is intentionally NOT published to the host: raw access to it belongs
+# on the internal network only, reached through the web container's proxy.
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: web/backend/Dockerfile
+    restart: unless-stopped
+    # No `ports:` — reachable only as `api:8000` on the compose network.
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/api/health').status==200 else 1)
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+  web:
+    build:
+      context: .
+      dockerfile: web/frontend/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    depends_on:
+      api:
+        condition: service_healthy

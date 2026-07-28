@@ -1,0 +1,4802 @@
+[
+  {
+    "path": "samples/bench/covers/synth_000.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_000",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_000_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_000",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_000_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_000",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_001.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_001",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_001_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_001",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_001_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_001",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_002.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_002",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_002_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_002",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_002_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_002",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_003.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_003",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_003_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_003",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_003_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_003",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_004.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_004",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_004_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_004",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_004_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_004",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_005.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_005",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_005_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_005",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_005_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_005",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_006.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_006",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_006_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_006",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_006_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_006",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_007.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_007",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_007_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_007",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_007_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_007",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_008.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_008",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_008_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_008",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_008_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_008",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_009.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_009",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_009_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_009",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_009_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_009",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_010.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_010",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_010_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_010",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_010_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_010",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_011.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_011",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_011_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_011",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_011_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_011",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_012.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_012",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_012_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_012",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_012_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_012",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_013.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_013",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_013_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_013",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_013_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_013",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_014.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_014",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_014_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_014",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_014_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_014",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_015.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_015",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_015_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_015",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_015_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_015",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_016.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_016",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_016_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_016",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_016_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_016",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_017.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_017",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_017_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_017",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_017_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_017",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_018.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_018",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_018_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_018",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_018_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_018",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_019.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_019",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_019_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_019",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_019_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_019",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_020.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_020",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_020_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_020",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_020_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_020",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_021.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_021",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_021_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_021",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_021_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_021",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_022.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_022",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_022_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_022",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_022_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_022",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_023.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_023",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_023_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_023",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_023_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_023",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_024.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_024",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_024_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_024",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_024_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_024",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_025.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_025",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_025_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_025",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_025_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_025",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_026.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_026",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_026_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_026",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_026_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_026",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_027.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_027",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_027_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_027",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_027_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_027",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_028.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_028",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_028_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_028",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_028_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_028",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_029.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_029",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_029_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_029",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_029_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_029",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_030.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_030",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_030_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_030",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_030_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_030",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_031.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_031",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_031_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_031",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_031_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_031",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_032.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_032",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_032_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_032",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_032_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_032",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_033.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_033",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_033_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_033",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_033_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_033",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_034.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_034",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_034_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_034",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_034_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_034",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_035.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_035",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_035_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_035",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_035_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_035",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_036.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_036",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_036_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_036",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_036_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_036",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_037.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_037",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_037_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_037",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_037_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_037",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_038.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_038",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_038_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_038",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_038_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_038",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_039.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_039",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_039_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_039",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_039_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_039",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_040.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_040",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_040_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_040",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_040_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_040",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_041.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_041",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_041_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_041",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_041_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_041",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_042.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_042",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_042_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_042",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_042_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_042",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_043.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_043",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_043_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_043",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_043_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_043",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_044.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_044",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_044_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_044",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_044_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_044",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_045.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_045",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_045_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_045",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_045_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_045",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_046.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_046",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_046_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_046",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_046_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_046",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_047.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_047",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_047_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_047",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_047_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_047",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_048.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_048",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_048_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_048",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_048_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_048",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_049.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_049",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_049_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_049",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_049_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_049",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_050.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_050",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_050_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_050",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_050_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_050",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_051.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_051",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_051_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_051",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_051_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_051",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_052.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_052",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_052_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_052",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_052_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_052",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_053.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_053",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_053_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_053",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_053_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_053",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_054.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_054",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_054_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_054",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_054_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_054",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_055.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_055",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_055_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_055",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_055_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_055",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_056.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_056",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_056_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_056",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_056_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_056",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_057.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_057",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_057_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_057",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_057_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_057",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_058.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_058",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_058_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_058",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_058_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_058",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_059.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_059",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_059_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_059",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_059_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_059",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_060.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_060",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_060_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_060",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_060_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_060",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_061.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_061",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_061_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_061",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_061_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_061",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_062.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_062",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_062_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_062",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_062_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_062",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_063.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_063",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_063_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_063",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_063_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_063",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_064.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_064",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_064_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_064",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_064_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_064",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_065.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_065",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_065_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_065",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_065_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_065",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_066.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_066",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_066_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_066",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_066_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_066",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_067.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_067",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_067_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_067",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_067_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_067",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_068.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_068",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_068_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_068",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_068_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_068",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_069.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_069",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_069_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_069",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_069_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_069",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_070.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_070",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_070_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_070",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_070_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_070",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_071.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_071",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_071_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_071",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_071_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_071",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_072.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_072",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_072_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_072",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_072_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_072",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_073.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_073",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_073_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_073",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_073_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_073",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_074.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_074",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_074_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_074",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_074_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_074",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_075.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_075",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_075_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_075",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_075_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_075",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_076.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_076",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_076_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_076",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_076_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_076",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_077.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_077",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_077_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_077",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_077_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_077",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_078.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_078",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_078_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_078",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_078_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_078",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_079.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_079",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_079_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_079",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_079_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_079",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_080.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_080",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_080_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_080",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_080_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_080",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_081.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_081",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_081_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_081",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_081_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_081",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_082.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_082",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_082_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_082",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_082_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_082",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_083.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_083",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_083_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_083",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_083_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_083",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_084.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_084",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_084_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_084",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_084_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_084",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_085.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_085",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_085_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_085",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_085_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_085",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_086.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_086",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_086_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_086",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_086_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_086",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_087.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_087",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_087_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_087",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_087_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_087",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_088.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_088",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_088_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_088",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_088_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_088",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_089.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_089",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_089_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_089",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_089_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_089",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_090.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_090",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_090_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_090",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_090_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_090",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_091.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_091",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_091_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_091",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_091_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_091",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_092.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_092",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_092_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_092",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_092_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_092",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_093.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_093",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_093_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_093",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_093_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_093",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_094.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_094",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_094_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_094",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_094_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_094",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_095.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_095",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_095_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_095",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_095_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_095",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_096.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_096",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_096_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_096",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_096_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_096",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_097.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_097",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_097_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_097",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_097_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_097",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_098.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_098",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_098_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_098",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_098_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_098",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_099.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_099",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_099_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_099",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_099_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_099",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_100.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_100",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_100_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_100",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_100_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_100",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_101.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_101",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_101_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_101",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_101_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_101",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_102.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_102",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_102_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_102",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_102_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_102",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_103.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_103",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_103_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_103",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_103_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_103",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_104.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_104",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_104_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_104",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_104_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_104",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_105.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_105",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_105_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_105",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_105_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_105",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_106.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_106",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_106_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_106",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_106_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_106",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_107.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_107",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_107_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_107",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_107_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_107",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_108.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_108",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_108_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_108",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_108_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_108",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_109.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_109",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_109_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_109",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_109_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_109",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_110.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_110",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_110_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_110",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_110_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_110",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_111.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_111",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_111_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_111",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_111_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_111",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_112.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_112",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_112_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_112",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_112_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_112",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_113.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_113",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_113_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_113",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_113_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_113",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_114.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_114",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_114_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_114",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_114_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_114",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_115.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_115",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_115_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_115",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_115_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_115",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_116.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_116",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_116_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_116",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_116_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_116",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_117.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_117",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_117_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_117",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_117_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_117",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_118.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_118",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_118_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_118",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_118_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_118",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_119.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_119",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_119_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_119",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_119_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_119",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_120.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_120",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_120_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_120",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_120_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_120",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_121.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_121",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_121_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_121",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_121_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_121",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_122.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_122",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_122_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_122",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_122_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_122",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_123.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_123",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_123_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_123",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_123_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_123",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_124.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_124",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_124_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_124",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_124_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_124",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_125.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_125",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_125_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_125",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_125_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_125",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_126.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_126",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_126_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_126",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_126_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_126",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_127.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_127",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_127_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_127",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_127_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_127",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_128.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_128",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_128_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_128",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_128_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_128",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_129.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_129",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_129_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_129",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_129_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_129",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_130.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_130",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_130_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_130",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_130_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_130",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_131.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_131",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_131_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_131",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_131_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_131",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_132.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_132",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_132_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_132",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_132_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_132",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_133.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_133",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_133_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_133",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_133_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_133",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_134.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_134",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_134_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_134",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_134_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_134",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_135.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_135",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_135_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_135",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_135_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_135",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_136.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_136",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_136_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_136",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_136_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_136",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_137.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_137",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_137_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_137",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_137_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_137",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_138.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_138",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_138_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_138",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_138_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_138",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_139.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_139",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_139_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_139",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_139_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_139",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_140.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_140",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_140_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_140",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_140_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_140",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_141.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_141",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_141_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_141",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_141_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_141",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_142.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_142",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_142_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_142",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_142_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_142",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_143.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_143",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_143_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_143",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_143_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_143",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_144.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_144",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_144_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_144",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_144_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_144",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_145.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_145",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_145_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_145",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_145_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_145",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_146.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_146",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_146_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_146",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_146_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_146",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_147.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_147",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_147_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_147",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_147_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_147",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_148.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_148",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_148_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_148",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_148_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_148",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_149.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_149",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_149_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_149",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_149_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_149",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_150.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_150",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_150_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_150",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_150_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_150",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_151.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_151",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_151_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_151",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_151_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_151",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_152.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_152",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_152_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_152",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_152_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_152",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_153.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_153",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_153_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_153",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_153_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_153",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_154.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_154",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_154_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_154",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_154_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_154",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_155.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_155",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_155_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_155",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_155_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_155",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_156.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_156",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_156_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_156",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_156_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_156",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_157.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_157",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_157_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_157",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_157_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_157",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_158.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_158",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_158_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_158",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_158_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_158",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_159.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_159",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_159_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_159",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_159_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_159",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_160.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_160",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_160_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_160",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_160_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_160",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_161.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_161",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_161_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_161",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_161_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_161",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_162.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_162",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_162_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_162",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_162_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_162",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_163.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_163",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_163_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_163",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_163_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_163",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_164.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_164",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_164_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_164",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_164_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_164",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_165.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_165",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_165_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_165",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_165_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_165",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_166.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_166",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_166_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_166",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_166_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_166",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_167.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_167",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_167_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_167",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_167_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_167",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_168.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_168",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_168_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_168",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_168_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_168",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_169.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_169",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_169_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_169",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_169_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_169",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_170.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_170",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_170_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_170",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_170_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_170",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_171.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_171",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_171_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_171",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_171_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_171",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_172.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_172",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_172_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_172",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_172_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_172",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_173.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_173",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_173_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_173",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_173_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_173",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_174.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_174",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_174_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_174",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_174_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_174",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_175.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_175",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_175_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_175",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_175_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_175",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_176.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_176",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_176_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_176",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_176_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_176",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_177.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_177",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_177_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_177",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_177_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_177",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_178.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_178",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_178_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_178",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_178_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_178",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_179.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_179",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_179_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_179",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_179_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_179",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_180.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_180",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_180_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_180",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_180_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_180",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_181.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_181",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_181_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_181",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_181_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_181",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_182.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_182",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_182_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_182",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_182_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_182",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_183.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_183",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_183_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_183",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_183_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_183",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_184.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_184",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_184_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_184",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_184_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_184",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_185.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_185",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_185_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_185",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_185_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_185",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_186.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_186",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_186_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_186",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_186_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_186",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_187.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_187",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_187_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_187",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_187_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_187",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_188.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_188",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_188_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_188",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_188_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_188",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_189.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_189",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_189_sequential_025.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.25,
+    "cover_id": "synth_189",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_189_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_189",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_190.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_190",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_190_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_190",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_190_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_190",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_191.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_191",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_191_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_191",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_191_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_191",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_192.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_192",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_192_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_192",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_192_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_192",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_193.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_193",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_193_sequential_100.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 1.0,
+    "cover_id": "synth_193",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_193_sequential_010.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.1,
+    "cover_id": "synth_193",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_194.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_194",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_194_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_194",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_194_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_194",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_195.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_195",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_195_keyed_005.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.05,
+    "cover_id": "synth_195",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_195_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_195",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_196.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_196",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_196_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_196",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_196_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_196",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_197.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_197",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_197_keyed_010.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.1,
+    "cover_id": "synth_197",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_197_keyed_050.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.5,
+    "cover_id": "synth_197",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/covers/synth_198.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_198",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_198_sequential_005.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.05,
+    "cover_id": "synth_198",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/stego/synth_198_keyed_025.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 0.25,
+    "cover_id": "synth_198",
+    "split": "test"
+  },
+  {
+    "path": "samples/bench/covers/synth_199.png",
+    "label": 0,
+    "technique": "clean",
+    "rate": 0.0,
+    "cover_id": "synth_199",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_199_keyed_100.png",
+    "label": 1,
+    "technique": "image-lsb-keyed",
+    "rate": 1.0,
+    "cover_id": "synth_199",
+    "split": "train"
+  },
+  {
+    "path": "samples/bench/stego/synth_199_sequential_050.png",
+    "label": 1,
+    "technique": "image-lsb-sequential",
+    "rate": 0.5,
+    "cover_id": "synth_199",
+    "split": "train"
+  }
+]

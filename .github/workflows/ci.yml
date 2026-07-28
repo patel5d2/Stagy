@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      # Lint and type-check tests and the web backend too, not just src:
+      # ASYNC230 (blocking I/O inside an async handler) only fires on web/.
+      - run: ruff check src tests web
+      - run: mypy src/stagy web
+      - run: pytest -q

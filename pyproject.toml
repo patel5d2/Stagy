@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stagy"
+version = "1.0.0"
+description = "Steganography suite: hide, extract, and detect hidden data across covers."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "pillow>=10.0",
+    "numpy>=1.26",
+    "cryptography>=42.0",
+    "argon2-cffi>=23.0",
+    "typer>=0.12",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+network = ["scapy>=2.5"]
+jpeg = ["jpeglib>=1.0"]
+docs-fmt = ["piexif>=1.1", "pypdf>=4.0"]
+web = ["fastapi>=0.110", "uvicorn>=0.29", "python-multipart>=0.0.9"]
+# dev includes the optional codec deps so the full test suite runs in CI.
+dev = [
+    "pytest>=8.0", "hypothesis>=6.0", "ruff>=0.5", "mypy>=1.10",
+    "piexif>=1.1", "pypdf>=4.0",
+    # Web extra + httpx: the API tests are part of the suite.
+    "fastapi>=0.110", "uvicorn>=0.29", "python-multipart>=0.0.9", "httpx>=0.27",
+    # Optional-codec deps so the JPEG DCT and network coding tests run in CI.
+    "jpeglib>=1.0", "scapy>=2.5",
+]
+
+[project.scripts]
+stagy = "stagy.cli.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stagy"]
+
+[tool.ruff]
+src = ["src"]
+line-length = 100
+
+[tool.ruff.lint]
+# Beyond ruff's default: B (bugbear) and ASYNC — the ci.yml comment relies on
+# ASYNC230 firing on blocking I/O in async handlers, which only runs if selected.
+extend-select = ["B", "ASYNC"]
+# B008: Typer/FastAPI use function calls (Option/Query) as arg defaults by design.
+ignore = ["B008"]
+
+[tool.mypy]
+strict = true
+files = ["src/stagy", "web"]
+
+# jpeglib and scapy ship no type stubs; treat their imports as untyped rather
+# than erroring. The codecs that use them annotate their own public surface.
+[[tool.mypy.overrides]]
+module = ["jpeglib.*", "scapy.*"]
+ignore_missing_imports = true
+
+# "." puts the `web` package on the path for the API tests.
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]

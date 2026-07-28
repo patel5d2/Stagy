@@ -1,0 +1,17 @@
+# Keep the build context small and reproducible. The API image installs from
+# pyproject/src; the web image builds from web/frontend and runs its own
+# `npm ci`, so host node_modules/dist must never leak in.
+.git
+.venv
+**/node_modules
+**/dist
+**/__pycache__
+*.pyc
+.mypy_cache
+.pytest_cache
+.ruff_cache
+.hypothesis
+samples
+docs
+tests
+**/tsconfig.tsbuildinfo

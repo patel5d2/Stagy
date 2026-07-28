@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   Task 7.3 — Stagy design system.
+
+   A security console, not a marketing page. The rules, and why:
+
+   1. ONE accent (cyan). Interactive affordances only — never decoration. If
+      everything is highlighted, the verdict does not stand out, and the verdict
+      is the only thing on screen that matters.
+   2. The verdict scale is a SEPARATE ramp (green/amber/red) and is the only
+      place those hues appear. Seeing red anywhere on this UI must mean
+      "likely-stego" and nothing else.
+   3. Monospace for anything an analyst reads character by character: hex,
+      byte counts, probabilities, signal scores, filenames.
+   4. Deep neutral background so bit-plane images (pure black/white noise) sit
+      on a surface that is neither, and read as data rather than as UI.
+
+   Full rationale in web/frontend/DESIGN.md.
+   ========================================================================= */
+
+@theme {
+  /* Base surfaces — deep neutral, cool-shifted so the cyan accent stays warm
+     relative to it. Three levels is enough; a fourth invites mush. */
+  --color-base-900: oklch(0.17 0.012 250); /* page */
+  --color-base-850: oklch(0.21 0.013 250); /* panel */
+  --color-base-800: oklch(0.25 0.014 250); /* raised / input */
+  --color-base-700: oklch(0.32 0.015 250); /* border */
+  --color-base-600: oklch(0.45 0.015 250); /* border, emphasized */
+
+  --color-ink-100: oklch(0.96 0.005 250); /* primary text */
+  --color-ink-300: oklch(0.78 0.008 250); /* secondary text */
+  --color-ink-500: oklch(0.60 0.010 250); /* muted / captions */
+
+  /* The single accent. */
+  --color-accent-400: oklch(0.80 0.13 200);
+  --color-accent-500: oklch(0.72 0.15 200);
+  --color-accent-600: oklch(0.60 0.14 200);
+
+  /* Verdict ramp — reserved. Never reuse these for anything else. */
+  --color-verdict-clean: oklch(0.75 0.16 155);
+  --color-verdict-suspicious: oklch(0.80 0.15 85);
+  --color-verdict-stego: oklch(0.68 0.19 25);
+
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius-panel: 0.75rem;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-base-900);
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-base-900);
+    color: var(--color-ink-100);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Technical readouts default to tabular figures so columns of numbers do not
+     jitter as values update (the capacity meter updates on every keystroke). */
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Visible focus is non-negotiable: this tool is operated by keyboard during
+     incident work, and Tailwind's reset removes the UA outline. */
+  :focus-visible {
+    outline: 2px solid var(--color-accent-500);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .panel {
+    background-color: var(--color-base-850);
+    border: 1px solid var(--color-base-700);
+    border-radius: var(--radius-panel);
+  }
+
+  .field {
+    width: 100%;
+    background-color: var(--color-base-800);
+    border: 1px solid var(--color-base-700);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: var(--color-ink-100);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+  }
+  .field::placeholder {
+    color: var(--color-ink-500);
+  }
+  .field:focus {
+    border-color: var(--color-accent-600);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 120ms ease, border-color 120ms ease;
+  }
+  .btn-primary {
+    background-color: var(--color-accent-600);
+    color: var(--color-base-900);
+  }
+  .btn-primary:hover:not(:disabled) {
+    background-color: var(--color-accent-500);
+  }
+  .btn-primary:disabled {
+    background-color: var(--color-base-700);
+    color: var(--color-ink-500);
+    cursor: not-allowed;
+  }
+  .btn-ghost {
+    background-color: transparent;
+    border: 1px solid var(--color-base-600);
+    color: var(--color-ink-300);
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-accent-600);
+    color: var(--color-ink-100);
+  }
+}
