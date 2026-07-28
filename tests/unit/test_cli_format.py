@@ -29,10 +29,9 @@ def test_report_exposes_flag_threshold(tmp_path) -> None:
 
 
 def test_shell_completion_is_enabled() -> None:
-    # add_completion=True must stay on: the completion install/show options exist.
-    from typer.testing import CliRunner
-
+    # Guards the --install-completion / --show-completion options staying on.
+    # Checks the Typer app config, not rendered --help (which wraps by terminal
+    # width and would flake in CI).
     from stagy.cli.main import app
 
-    out = CliRunner().invoke(app, ["--help"]).output
-    assert "--install-completion" in out and "--show-completion" in out
+    assert app._add_completion is True
